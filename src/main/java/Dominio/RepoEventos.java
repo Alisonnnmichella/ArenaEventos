@@ -14,35 +14,10 @@ public class RepoEventos extends CollectionBasedRepo<Evento> {
 
     private static RepoEventos instance = null;
     private List<Evento> eventos;
-    private FixtureEventos fixtureEventos;
-    private DateTime fechaMasTempranaDeUnEvento;
-    private DateTime fechaMasTardiaDeUnEvento;
-    private DateTime diezDeMayo2019;
-    private DateTime veinteDeJulio2019;
-    private DateTime tresDeJunio2019;
-
-    private Evento camping;
-    private Evento cenaPalermo;
-    private Evento reunionfamiliar;
-    private Evento reunionamistades;
-    private RepoEventos repoEventos;
 
 
     private RepoEventos() {
-        diezDeMayo2019=new DateTime(2019, 05, 10, 12, 00);
-        veinteDeJulio2019=new DateTime(2019, 07, 20, 11, 00);
-        tresDeJunio2019=new DateTime(2019, 06, 3, 1, 00);
-        camping=new Evento(diezDeMayo2019,"Camping","Lobos");
-        cenaPalermo=new Evento(tresDeJunio2019,"Cena","Palermo");
-        reunionamistades=new Evento(veinteDeJulio2019,"Cine","Puerto madero");
-        reunionfamiliar=new Evento(diezDeMayo2019,"Cena","Recoleta");
-
-        this.eventos = new ArrayList<>();
-        eventos.add(camping);
-        eventos.add(reunionamistades);
-        eventos.add(reunionamistades);
-        eventos.add(reunionfamiliar);
-
+        eventos=new ArrayList<>();
         //      activarNotificadorProximosEventos();
     }
 

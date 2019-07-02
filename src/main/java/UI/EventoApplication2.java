@@ -8,7 +8,7 @@ import org.uqbar.commons.applicationContext.ApplicationContext;
 
 public class EventoApplication2  extends Application {
 
-        public static void main(String[] args) {
+        public static void main() {
             new EventoApplication2().start();
         }
 

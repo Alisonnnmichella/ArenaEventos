@@ -3,11 +3,8 @@ package UI;
 import Dominio.Evento;
 import Dominio.RepoEventos;
 import org.joda.time.DateTime;
-import org.joda.time.format.DateTimeFormat;
 import org.uqbar.commons.model.annotations.Observable;
 import org.uqbar.commons.model.annotations.Transactional;
-import org.uqbar.commons.model.exceptions.UserException;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
