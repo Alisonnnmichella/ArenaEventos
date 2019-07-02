@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c168832-ab8f-4e3a-9ddb-41c28ca74aea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/UI/LocalDateTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/UI/LocalDateTransformer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/BuscadorEventosViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/BuscadorEventosViewModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/WindowBuscadorEventos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/WindowBuscadorEventos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UI/BuscadorEventosViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UI/BuscadorEventosViewModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UI/WindowBuscadorEventos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UI/WindowBuscadorEventos.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BuscadorEventosViewModelTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            <state relative-caret-position="243">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/UI/LocalDateTransformer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -89,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/UI/EventoApplication2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -259,7 +263,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562087012659" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562087410529" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -366,9 +370,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BuscadorEventosViewModelTest_laFechaSeEncuentraEnUnRango - 2019.07.02 at 00h 53m 36s.xml">
-      <configuration name="BuscadorEventosViewModelTest.laFechaSeEncuentraEnUnRango" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BuscadorEventosViewModelTest_laFechaSeEncuentraEnUnRango - 2019.07.02 at 00h 54m 32s.xml">
       <configuration name="BuscadorEventosViewModelTest.laFechaSeEncuentraEnUnRango" configurationId="JUnit" />
     </history-entry>
@@ -395,6 +396,9 @@
     </history-entry>
     <history-entry file="BuscadorEventosViewModelTest_search - 2019.07.02 at 09h 32m 49s.xml">
       <configuration name="BuscadorEventosViewModelTest.search" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BuscadorEventosViewModelTest - 2019.07.02 at 14h 03m 02s.xml">
+      <configuration name="BuscadorEventosViewModelTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -535,30 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UI/LocalDateTransformer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-            <element signature="e#1179#1180#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UI/EventoApplication2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/UI/BuscadorEventosViewModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -586,10 +566,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BuscadorEventosViewModelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        <state relative-caret-position="243">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UI/EventoApplication2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UI/LocalDateTransformer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1179#1180#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
           </folding>
         </state>
       </provider>

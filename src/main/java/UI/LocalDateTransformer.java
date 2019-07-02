@@ -7,12 +7,12 @@ import org.uqbar.arena.bindings.ValueTransformer;
 import org.uqbar.commons.model.exceptions.UserException;
 
 public class LocalDateTransformer implements ValueTransformer<DateTime,String> {
-    private String pattern="dd/MM/yyyy";
+    private String pattern = "yyyy-MM-dd";
+
 
     @Override
     public DateTime viewToModel(String valueFromView) {
         try {
-            String pattern = "yyyy-MM-dd";
             if (StringUtils.isBlank(valueFromView))
                 return null;
             else {
