@@ -24,7 +24,6 @@ public class WindowBuscadorEventos extends SimpleWindow<BuscadorEventosViewModel
         new Label(mainPanel).setText("Ingrese desde y hasta que fecha desea obtener los eventos disponibles")
         .setBackground(Color.PINK)
         .setForeground(Color.blue);
-        new Label(mainPanel).setText("Las fechas deben tener el formato: 'YYYY-mm-dd'");
 
 
         super.createMainTemplate(mainPanel);
@@ -37,10 +36,13 @@ public class WindowBuscadorEventos extends SimpleWindow<BuscadorEventosViewModel
 
         searchFormPanel.setLayout(new ColumnLayout(2));
         new Label(searchFormPanel).setText("FechaInicial").setForeground(Color.BLUE);
-        new TextBox(searchFormPanel).setWidth(150).bindValueToProperty("fechaInicial");
-
+        new TextBox(searchFormPanel).setWidth(150)
+                .bindValueToProperty("fechaInicial")
+                .setTransformer(new LocalDateTransformer());
         new Label(searchFormPanel).setText("Fecha final").setForeground(Color.BLUE);
-        new TextBox(searchFormPanel).setWidth(150).bindValueToProperty("fechaFinal");
+
+        new TextBox(searchFormPanel).setWidth(150).bindValueToProperty("fechaFinal")
+                .setTransformer(new LocalDateTransformer());
     }
     @Override
     protected void addActions(Panel actionsPanel) {

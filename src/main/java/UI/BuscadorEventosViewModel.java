@@ -49,25 +49,18 @@ public class BuscadorEventosViewModel {
         return fechaInicial;
     }
 
-    public void setFechaInicial(String fechaInicial) {
-        this.fechaInicial=validarFecha(fechaInicial);
-    }
+
     public DateTime getFechaFinal() {
         return fechaFinal;
     }
 
-    public void setFechaFinal(String fechaFinal) {
-        this.fechaFinal=validarFecha(fechaFinal);
+    public void setFechaInicial(DateTime fechaInicial) {
+        this.fechaInicial = fechaInicial;
     }
-    public DateTime validarFecha(String fecha){
-            try {
-                String pattern = "yyyy-MM-dd";
-                DateTime date = DateTime.parse(fecha, DateTimeFormat.forPattern(pattern));
-                return date;
-            }catch (Exception e) {
-                throw new UserException("No se pudo parsear ");
-            }
-        }
+
+    public void setFechaFinal(DateTime fechaFinal) {
+        this.fechaFinal = fechaFinal;
+    }
 
     public List<DateTime> fechasDeEventosOrdenadas(){
         List<DateTime> fechas=new ArrayList<>();
