@@ -1,13 +1,11 @@
 import Dominio.Evento;
 import Dominio.RepoEventos;
 import UI.BuscadorEventosViewModel;
-import UI.EventoApplication2;
+import UI.EventoApplication;
 import org.joda.time.DateTime;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class BuscadorEventosViewModelTest {
     private BuscadorEventosViewModel buscador;
@@ -23,7 +21,7 @@ public class BuscadorEventosViewModelTest {
     private Evento ensayoBanda;
     private Evento cenaFamiliar;
 
-    private EventoApplication2 aplicacion ;
+    private EventoApplication aplicacion ;
     @Before
     public void inicialize() {
         buscador = new BuscadorEventosViewModel();

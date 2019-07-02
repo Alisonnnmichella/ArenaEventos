@@ -1,9 +1,7 @@
 package Dominio;
 
-import UI.FixtureEventos;
 import org.apache.commons.collections15.Predicate;
 import org.joda.time.DateTime;
-import org.joda.time.Hours;
 import org.uqbar.commons.model.CollectionBasedRepo;
 
 import java.util.ArrayList;

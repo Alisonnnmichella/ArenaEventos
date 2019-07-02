@@ -1,12 +1,22 @@
 package UI;
 
-public class EventoApplication {
+import Dominio.Evento;
+import Dominio.RepoEventos;
+import org.uqbar.arena.Application;
+import org.uqbar.arena.windows.Window;
+import org.uqbar.commons.applicationContext.ApplicationContext;
 
-    public EventoApplication(){
+public class EventoApplication extends Application {
+
+        public static void main() {
+            new EventoApplication().start();
+        }
+
+        @Override
+        protected Window<?> createMainWindow() {
+            ApplicationContext.getInstance().configureSingleton(Evento.class, RepoEventos.getInstance());
+            return new BuscadorEventosWindow(this);
+        }
 
     }
 
-    public static void main(String[] args) {
-        new WindowEventos1().startApplication();
-    }
-}

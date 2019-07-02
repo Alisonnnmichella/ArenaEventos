@@ -12,8 +12,8 @@ import org.uqbar.arena.windows.WindowOwner;
 
 import java.awt.*;
 
-public class WindowBuscadorEventos extends SimpleWindow<BuscadorEventosViewModel>{
-    public WindowBuscadorEventos(WindowOwner parent){
+public class BuscadorEventosWindow extends SimpleWindow<BuscadorEventosViewModel>{
+    public BuscadorEventosWindow(WindowOwner parent){
         super(parent,new BuscadorEventosViewModel());
         this.getModelObject().search();
     }
@@ -27,7 +27,7 @@ public class WindowBuscadorEventos extends SimpleWindow<BuscadorEventosViewModel
 
 
 
-        
+
         super.createMainTemplate(mainPanel);
 
         this.createResultsGrid(mainPanel);
