@@ -23,9 +23,8 @@ public class BuscadorEventosViewModel {
     }
     public void search() {
         this.eventos = getRepositorioEventos().search(this.fechaInicial, this.fechaFinal);
-
+        Collections.sort(eventos);
     }
-
     public void clear() {
         eventos = new ArrayList<Evento>();
         fechaInicial = null;

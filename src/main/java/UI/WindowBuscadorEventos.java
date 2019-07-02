@@ -26,6 +26,8 @@ public class WindowBuscadorEventos extends SimpleWindow<BuscadorEventosViewModel
         .setForeground(Color.blue);
 
 
+
+        
         super.createMainTemplate(mainPanel);
 
         this.createResultsGrid(mainPanel);
@@ -35,7 +37,7 @@ public class WindowBuscadorEventos extends SimpleWindow<BuscadorEventosViewModel
         Panel searchFormPanel = new Panel(mainPanel);
 
         searchFormPanel.setLayout(new ColumnLayout(2));
-        new Label(searchFormPanel).setText("FechaInicial").setForeground(Color.BLUE);
+        new Label(searchFormPanel).setText("Fecha inicial").setForeground(Color.BLUE);
         new TextBox(searchFormPanel).setWidth(150)
                 .bindValueToProperty("fechaInicial")
                 .setTransformer(new LocalDateTransformer());

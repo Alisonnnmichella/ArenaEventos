@@ -5,7 +5,7 @@ import org.joda.time.format.DateTimeFormat;
 import org.uqbar.commons.model.Entity;
 import org.uqbar.commons.model.annotations.Observable;
 @Observable
-public class Evento extends Entity {
+public class Evento extends Entity implements Comparable<Evento> {
     private DateTime fecha;
     private String fechaSinHoraEnString;
     private String horaEnString;
@@ -38,7 +38,7 @@ public class Evento extends Entity {
     }
 
     public String getFechaSinHoraComoString(DateTime fecha) {
-        return fecha.toString(DateTimeFormat.forPattern("yyyy-MM-dd"));
+        return fecha.toString(DateTimeFormat.forPattern("dd-MM-yyyy"));
     }
     public String getHoraComoString(DateTime fecha){
         return fecha.toString(DateTimeFormat.forPattern("HH:mm"));
@@ -61,6 +61,11 @@ public class Evento extends Entity {
 
     public void setHoraEnString(String horaEnString) {
         this.horaEnString = horaEnString;
+    }
+
+    @Override
+    public int compareTo(Evento otherEvento){
+        return getFecha().compareTo(otherEvento.getFecha());
     }
 }
 
